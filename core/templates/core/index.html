@@ -1,0 +1,40 @@
+{%extends 'core/inherit.html'%}
+
+{%block title%}
+<title>FN44</title>
+{%endblock%}
+
+
+
+{%block body%}
+<header>
+        <h1>Mening yaratgan birinchi website ga xush kelibsiz</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Men haqimda</a>
+            <a href="#services">Xizmatlar</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home page</h2>
+            <p>Bu oddiy HTML page. Sinov uchun uchun yaratilgan.</p>
+        </section>
+
+        <section id="about">
+            <h2>Mening birinchi html proyektim</h2>
+            {%for course in courses%}
+
+            <p>{{course}}</p>
+
+            {%endfor%}
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. Aloqa uchun +998902724463 raqamiga qo'ng'iroq qiling.</p>
+    </footer>
+{%endblock%}
+
